@@ -80,7 +80,7 @@ const usuariosDelete = async (req, res = response) => {
   const user = await User.findByIdAndUpdate(id, { estado: false });
 
   res.json({
-    user,
+    user
   });
 };
 
